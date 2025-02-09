@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffe6f2;
+    color: #ff0080;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: #ff4da6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.btn:hover {
+    background-color: #ff0080;
+}
+
+.response {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.yandere-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff0055;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.glitch {
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: glitchEffect 0.1s infinite;
+}
+
+@keyframes glitchEffect {
+    0% { transform: translate(2px, 2px); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, 2px); }
+    100% { transform: translate(0, 0); }
+}
+
